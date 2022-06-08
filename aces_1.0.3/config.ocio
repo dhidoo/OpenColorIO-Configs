@@ -4275,3 +4275,5 @@ colorspaces:
     allocation: uniform
     allocationvars: [-0.3584, 1.468]
     to_reference: !<ColorSpaceTransform> {src: ACES - ACEScc, dst: ACES - ACES2065-1}
+    
+    mkdir aces && cd aces && git init && git remote add origin https://github.com/colour-science/OpenColorIO-Configs/ && git config core.sparsecheckout true && echo /aces_1.0.3 > .git/info/sparse-checkout && git pull origin master
